@@ -1,0 +1,8 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Users/Yann/digitec/report_4/report_4.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+C:/Users/Yann/digitec/report_4/report_4.srcs/sources_1/new/clk_div.v,1585322614,verilog,,C:/Users/Yann/digitec/report_4/report_4.srcs/sources_1/new/pwm.v,,clk_div,,,,,,,,
+C:/Users/Yann/digitec/report_4/report_4.srcs/sources_1/new/fsm2.v,1585329319,verilog,,,,fsm2,,,,,,,,
+C:/Users/Yann/digitec/report_4/report_4.srcs/sources_1/new/pwm.v,1585327801,verilog,,C:/Users/Yann/digitec/report_4/report_4.srcs/sources_1/new/fsm2.v,,pwm,,,,,,,,
