@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Sun Mar 29 17:54:38 2020
+| Date             : Sun Mar 29 21:40:46 2020
 | Host             : DESKTOP-JPHN0MJ running 64-bit major release  (build 9200)
 | Command          : report_power -file fsm2_power_routed.rpt -pb fsm2_power_summary_routed.pb -rpx fsm2_power_routed.rpx
 | Design           : fsm2
@@ -53,12 +53,12 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      126 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       21 |     20800 |            0.10 |
-|   Register     |    <0.001 |       77 |     41600 |            0.19 |
-|   CARRY4       |    <0.001 |       14 |      8150 |            0.17 |
+| Slice Logic    |    <0.001 |       75 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       19 |     20800 |            0.09 |
+|   Register     |    <0.001 |       39 |     41600 |            0.09 |
+|   CARRY4       |    <0.001 |        7 |      8150 |            0.09 |
 |   Others       |     0.000 |        8 |       --- |             --- |
-| Signals        |    <0.001 |      103 |       --- |             --- |
+| Signals        |    <0.001 |       55 |       --- |             --- |
 | I/O            |     0.005 |       10 |       106 |            9.43 |
 | Static Power   |     0.072 |          |           |                 |
 | Total          |     0.078 |          |           |                 |

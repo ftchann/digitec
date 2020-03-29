@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Sun Mar 29 17:53:53 2020
+| Date         : Sun Mar 29 21:40:23 2020
 | Host         : DESKTOP-JPHN0MJ running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file fsm2_control_sets_placed.rpt
 | Design       : fsm2
@@ -27,7 +27,7 @@ Table of Contents
 |    Minimum number of control sets                        |     4 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    11 |
+| Unused register locations in slices containing registers |    25 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -41,13 +41,13 @@ Table of Contents
 +--------------------+-------+
 | Total control sets |     4 |
 | >= 0 to < 4        |     1 |
-| >= 4 to < 6        |     0 |
-| >= 6 to < 8        |     1 |
-| >= 8 to < 10       |     0 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
 | >= 10 to < 12      |     0 |
 | >= 12 to < 14      |     0 |
 | >= 14 to < 16      |     0 |
-| >= 16              |     2 |
+| >= 16              |     1 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,9 +58,9 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              18 |            5 |
-| No           | No                    | Yes                    |               7 |            1 |
-| No           | Yes                   | No                     |              52 |           14 |
+| No           | No                    | No                     |              10 |            4 |
+| No           | No                    | Yes                    |               4 |            1 |
+| No           | Yes                   | No                     |              25 |            7 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |               0 |            0 |
@@ -73,10 +73,10 @@ Table of Contents
 +----------------------------+---------------+------------------+------------------+----------------+
 |        Clock Signal        | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count |
 +----------------------------+---------------+------------------+------------------+----------------+
-|  clock2/clk_count_reg[0]_0 |               |                  |                1 |              2 |
-|  clock1/clk_count_reg[2]_0 |               | reset_IBUF       |                1 |              7 |
-|  clk_IBUF_BUFG             |               |                  |                4 |             16 |
-|  clk_IBUF_BUFG             |               | reset_IBUF       |               14 |             52 |
+|  ll__0                     |               |                  |                1 |              1 |
+|  clock1/clk_count_reg[0]_0 |               | reset_IBUF       |                1 |              4 |
+|  clk_IBUF_BUFG             |               |                  |                3 |              9 |
+|  clk_IBUF_BUFG             |               | reset_IBUF       |                7 |             25 |
 +----------------------------+---------------+------------------+------------------+----------------+
 
 
