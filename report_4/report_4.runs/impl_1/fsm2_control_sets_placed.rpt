@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Sun Mar 29 21:40:23 2020
+| Date         : Mon Mar 30 07:33:56 2020
 | Host         : DESKTOP-JPHN0MJ running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file fsm2_control_sets_placed.rpt
 | Design       : fsm2
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |     4 |
-|    Minimum number of control sets                        |     4 |
+| Total control sets                                       |     5 |
+|    Minimum number of control sets                        |     5 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
 | Unused register locations in slices containing registers |    25 |
@@ -39,13 +39,13 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |     4 |
-| >= 0 to < 4        |     1 |
-| >= 4 to < 6        |     1 |
+| Total control sets |     5 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     0 |
 | >= 6 to < 8        |     0 |
-| >= 8 to < 10       |     1 |
+| >= 8 to < 10       |     0 |
 | >= 10 to < 12      |     0 |
-| >= 12 to < 14      |     0 |
+| >= 12 to < 14      |     2 |
 | >= 14 to < 16      |     0 |
 | >= 16              |     1 |
 +--------------------+-------+
@@ -58,8 +58,8 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              10 |            4 |
-| No           | No                    | Yes                    |               4 |            1 |
+| No           | No                    | No                     |              17 |            6 |
+| No           | No                    | Yes                    |              13 |            2 |
 | No           | Yes                   | No                     |              25 |            7 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
@@ -74,8 +74,9 @@ Table of Contents
 |        Clock Signal        | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count |
 +----------------------------+---------------+------------------+------------------+----------------+
 |  ll__0                     |               |                  |                1 |              1 |
-|  clock1/clk_count_reg[0]_0 |               | reset_IBUF       |                1 |              4 |
-|  clk_IBUF_BUFG             |               |                  |                3 |              9 |
+|  clk_IBUF_BUFG             |               |                  |                1 |              3 |
+|  clock1/clk_count_reg[0]_0 |               | reset_IBUF       |                2 |             13 |
+|  nextstate                 |               |                  |                4 |             13 |
 |  clk_IBUF_BUFG             |               | reset_IBUF       |                7 |             25 |
 +----------------------------+---------------+------------------+------------------+----------------+
 

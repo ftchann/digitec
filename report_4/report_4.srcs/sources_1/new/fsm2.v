@@ -59,7 +59,7 @@ module fsm2(input left, input right, input reset, input clk, output reg [5:0] q 
                         nextstate = P1;
                         ll = 0;
                     end
-                    else
+                    else if(right & left)
                         nextstate = P0;          
             P1: nextstate = P2;
             P2: nextstate = P3;
