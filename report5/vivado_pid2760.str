@@ -1,0 +1,584 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:40:23 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 2760
+License: Customer
+
+Current time: 	Tue Mar 31 16:08:16 CEST 2020
+Time zone: 	Central European Standard Time (Europe/Berlin)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 2560x1440
+Screen resolution (DPI): 125
+Available screens: 1
+Available disk space: 275 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=18
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Yann
+User home directory: C:/Users/Yann
+User working directory: C:/Users/Yann/digitec/report5
+User country: 	CH
+User language: 	de
+User locale: 	de_CH
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2019.2
+RDI_DATADIR: C:/Xilinx/Vivado/2019.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: C:/Users/Yann/AppData/Roaming/Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: C:/Users/Yann/AppData/Roaming/Xilinx/Vivado/2019.2/
+Vivado layouts directory: C:/Users/Yann/AppData/Roaming/Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Yann/digitec/report5/vivado.log
+Vivado journal file location: 	C:/Users/Yann/digitec/report5/vivado.jou
+Engine tmp dir: 	C:/Users/Yann/digitec/report5/.Xil/Vivado-2760-DESKTOP-JPHN0MJ
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2019.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	157 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 615 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// WARNING: HEventQueue.dispatchEvent() is taking  1182 ms.
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 106 MB (+108670kb) [00:00:13]
+// [Engine Memory]: 613 MB (+490859kb) [00:00:13]
+// bB (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Yann\digitec\report5\report5.xpr. Version: Vivado v2019.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/Yann/digitec/report5/report5.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 643 MB. GUI used memory: 63 MB. Current time: 3/31/20, 4:08:18 PM CEST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/Yann/digitec/report5/report5.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 802 MB (+166594kb) [00:00:24]
+// [GUI Memory]: 113 MB (+1854kb) [00:00:25]
+// [GUI Memory]: 120 MB (+1700kb) [00:00:27]
+// [Engine Memory]: 865 MB (+23935kb) [00:00:27]
+// WARNING: HEventQueue.dispatchEvent() is taking  4638 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:14 . Memory (MB): peak = 898.066 ; gain = 246.434 
+// Project name: report5; location: C:/Users/Yann/digitec/report5; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bB (cr)
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 127 MB (+713kb) [00:00:37]
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ALU (ALU.v)]", 1); // B (F, cr)
+// PAPropertyPanels.initPanels (arithmetic.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ALU (ALU.v), arith : arithmetic (arithmetic.v)]", 2, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ALU (ALU.v), arith : arithmetic (arithmetic.v)]", 2, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 909 MB. GUI used memory: 68 MB. Current time: 3/31/20, 4:08:44 PM CEST
+// [Engine Memory]: 913 MB (+4459kb) [00:00:43]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ALU (ALU.v), arith : arithmetic (arithmetic.v), adder1 : adder (adder.v)]", 3, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ALU (ALU.v), arith : arithmetic (arithmetic.v), adder1 : adder (adder.v), genblk1[2].genblk1.fulladd2 : FullAdder (adder.v)]", 6, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectCodeEditor("adder.v", 580, 248); // ch (w, cr)
+// Elapsed time: 28 seconds
+typeControlKey((HResource) null, "adder.v", 'v'); // ch (w, cr)
+selectCodeEditor("adder.v", 402, 349); // ch (w, cr)
+// Elapsed time: 21 seconds
+selectCodeEditor("adder.v", 121, 385); // ch (w, cr)
+selectCodeEditor("adder.v", 128, 389); // ch (w, cr)
+// Elapsed time: 261 seconds
+selectCodeEditor("adder.v", 317, 209); // ch (w, cr)
+// Elapsed time: 12 seconds
+selectCodeEditor("adder.v", 243, 165); // ch (w, cr)
+// Elapsed time: 32 seconds
+selectCodeEditor("adder.v", 615, 447); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("adder.v", 247, 245); // ch (w, cr)
+selectCodeEditor("adder.v", 131, 232); // ch (w, cr)
+selectCodeEditor("adder.v", 891, 289); // ch (w, cr)
+selectCodeEditor("adder.v", 762, 244); // ch (w, cr)
+// Elapsed time: 22 seconds
+selectCodeEditor("adder.v", 135, 266); // ch (w, cr)
+selectCodeEditor("adder.v", 347, 189); // ch (w, cr)
+// Elapsed time: 114 seconds
+selectCodeEditor("adder.v", 363, 238); // ch (w, cr)
+// Elapsed time: 18 seconds
+selectCodeEditor("adder.v", 348, 240); // ch (w, cr)
+selectCodeEditor("adder.v", 467, 245); // ch (w, cr)
+// Elapsed time: 50 seconds
+selectCodeEditor("adder.v", 564, 436); // ch (w, cr)
+// Elapsed time: 53 seconds
+selectCodeEditor("adder.v", 386, 460); // ch (w, cr)
+selectCodeEditor("adder.v", 762, 487); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("adder.v", 668, 199); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("adder.v", 597, 187); // ch (w, cr)
+selectCodeEditor("adder.v", 456, 185); // ch (w, cr)
+// Elapsed time: 37 seconds
+selectCodeEditor("adder.v", 581, 235); // ch (w, cr)
+selectCodeEditor("adder.v", 816, 189); // ch (w, cr)
+selectCodeEditor("adder.v", 854, 191); // ch (w, cr)
+selectCodeEditor("adder.v", 701, 125); // ch (w, cr)
+selectCodeEditor("adder.v", 841, 191); // ch (w, cr)
+// Elapsed time: 20 seconds
+selectCodeEditor("adder.v", 831, 193); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("adder.v", 545, 246); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("adder.v", 297, 90); // ch (w, cr)
+// Elapsed time: 21 seconds
+selectCodeEditor("adder.v", 686, 212); // ch (w, cr)
+selectCodeEditor("adder.v", 533, 246); // ch (w, cr)
+selectCodeEditor("adder.v", 212, 116); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("adder.v", 684, 215); // ch (w, cr)
+selectCodeEditor("adder.v", 178, 243); // ch (w, cr)
+// Elapsed time: 13 seconds
+selectCodeEditor("adder.v", 246, 210); // ch (w, cr)
+selectCodeEditor("adder.v", 139, 226); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 42 seconds
+selectCodeEditor("adder.v", 76, 34); // ch (w, cr)
+selectCodeEditor("adder.v", 185, 274); // ch (w, cr)
+selectCodeEditor("adder.v", 121, 42); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 28 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cr)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_PROJECT, "Open..."); // ai (cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+dismissFileChooser();
+// 'i' command handler elapsed time: 7 seconds
+selectCodeEditor("adder.v", 195, 243); // ch (w, cr)
+selectCodeEditor("adder.v", 313, 283); // ch (w, cr)
+selectCodeEditor("adder.v", 418, 242); // ch (w, cr)
+selectCodeEditor("adder.v", 448, 277); // ch (w, cr)
+selectCodeEditor("adder.v", 416, 215); // ch (w, cr)
+selectCodeEditor("adder.v", 561, 208); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("adder.v", 468, 299); // ch (w, cr)
+// Elapsed time: 11 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "arithmetic.v", 0); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "adder.v", 1); // i (h, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cr)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_PROJECT, "Open..."); // ai (cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+setFileChooser("C:/Users/Yann/digitec/lab5/lab5.xpr");
+// Opening Vivado Project: C:/Users/Yann/digitec/lab5/lab5.xpr. Version: Vivado v2019.2 
+// bB (cr):  Open Project : addNotify
+selectButton("OptionPane.button", "No"); // JButton (A, G)
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// Tcl Message: open_project C:/Users/Yann/digitec/lab5/lab5.xpr 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  3505 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 961.598 ; gain = 2.379 
+// [GUI Memory]: 139 MB (+5951kb) [00:16:49]
+// Project name: lab5; location: C:/Users/Yann/digitec/lab5; part: xc7a35tcpg236-1
+// 'i' command handler elapsed time: 15 seconds
+dismissDialog("Open Project"); // bB (cr)
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ALU (ALU.v)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ALU (ALU.v)]", 1, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ALU (ALU.v), arith : arithmetic (arithmetic.v)]", 2, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ALU (ALU.v), arith : arithmetic (arithmetic.v)]", 2, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ALU (ALU.v), log : logical (logical.v)]", 5, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ALU (ALU.v), log : logical (logical.v)]", 5, false, false, false, false, false, true); // B (F, cr) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 933 MB. GUI used memory: 84 MB. Current time: 3/31/20, 4:25:09 PM CEST
+selectCodeEditor("logical.v", 203, 290); // ch (w, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ALU (ALU.v), arith : arithmetic (arithmetic.v), adder1 : adder (adder.v)]", 3, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ALU (ALU.v), arith : arithmetic (arithmetic.v), adder1 : adder (adder.v), genblk1[2].genblk1.fulladd2 : FullAdder (adder.v)]", 6, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectCodeEditor("adder.v", 328, 287); // ch (w, cr)
+// Elapsed time: 19 seconds
+selectCodeEditor("adder.v", 88, 240); // ch (w, cr)
+selectCodeEditor("adder.v", 197, 294); // ch (w, cr)
+selectCodeEditor("adder.v", 186, 259); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 36 seconds
+selectCodeEditor("adder.v", 219, 130); // ch (w, cr)
+// Elapsed time: 27 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bB (cr):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cr)
+// Tcl Message: current_project report5 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Mar 31 16:26:52 2020] Launched synth_1... Run output will be captured here: C:/Users/Yann/digitec/report5/report5.runs/synth_1/runme.log [Tue Mar 31 16:26:52 2020] Launched impl_1... Run output will be captured here: C:/Users/Yann/digitec/report5/report5.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 957 MB. GUI used memory: 84 MB. Current time: 3/31/20, 4:26:54 PM CEST
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Implementation Failed: addNotify
+// Elapsed time: 124 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_LOG_WINDOW, "View Log"); // a (Q, aj)
+selectRadioButton(PAResourceCommand.PACommandNames_MESSAGE_WINDOW, "View Messages"); // a (Q, aj)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // aj (cr)
+// Elapsed time: 51 seconds
+selectCodeEditor("adder.v", 378, 357); // ch (w, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,053 MB. GUI used memory: 85 MB. Current time: 3/31/20, 4:29:54 PM CEST
+selectCodeEditor("adder.v", 768, 255); // ch (w, cr)
+// [Engine Memory]: 1,053 MB (+99042kb) [00:22:24]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 38 seconds
+selectCodeEditor("adder.v", 686, 162); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 24 seconds
+selectCodeEditor("adder.v", 215, 214); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 31 seconds
+selectCodeEditor("adder.v", 298, 269); // ch (w, cr)
+selectCodeEditor("adder.v", 226, 226); // ch (w, cr)
+selectCodeEditor("adder.v", 156, 144); // ch (w, cr)
+selectCodeEditor("adder.v", 899, 184); // ch (w, cr)
+typeControlKey((HResource) null, "adder.v", 'c'); // ch (w, cr)
+selectCodeEditor("adder.v", 209, 159); // ch (w, cr)
+selectCodeEditor("adder.v", 209, 159, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("adder.v", 209, 161); // ch (w, cr)
+typeControlKey((HResource) null, "adder.v", 'v'); // ch (w, cr)
+selectCodeEditor("adder.v", 770, 183); // ch (w, cr)
+selectCodeEditor("adder.v", 732, 292); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("adder.v", 534, 266); // ch (w, cr)
+selectCodeEditor("adder.v", 466, 263); // ch (w, cr)
+selectCodeEditor("adder.v", 862, 199); // ch (w, cr)
+selectCodeEditor("adder.v", 86, 242); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("adder.v", 167, 310); // ch (w, cr)
+selectCodeEditor("adder.v", 130, 183); // ch (w, cr)
+selectCodeEditor("adder.v", 926, 188); // ch (w, cr)
+selectCodeEditor("adder.v", 130, 235); // ch (w, cr)
+selectCodeEditor("adder.v", 1012, 233); // ch (w, cr)
+selectCodeEditor("adder.v", 985, 242); // ch (w, cr)
+selectCodeEditor("adder.v", 1084, 226); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("adder.v", 576, 325); // ch (w, cr)
+selectCodeEditor("adder.v", 241, 289); // ch (w, cr)
+// Elapsed time: 16 seconds
+selectCodeEditor("adder.v", 126, 39); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bB (cr):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cr)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Mar 31 16:33:17 2020] Launched synth_1... Run output will be captured here: C:/Users/Yann/digitec/report5/report5.runs/synth_1/runme.log [Tue Mar 31 16:33:17 2020] Launched impl_1... Run output will be captured here: C:/Users/Yann/digitec/report5/report5.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Starting Design Runs"); // bB (cr)
+selectCodeEditor("adder.v", 377, 390); // ch (w, cr)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Implementation Failed: addNotify
+// Elapsed time: 96 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (aj)
+dismissDialog("Implementation Failed"); // aj (cr)
+selectCodeEditor("adder.v", 577, 372); // ch (w, cr)
+selectCodeEditor("adder.v", 511, 308); // ch (w, cr)
+selectCodeEditor("adder.v", 717, 314); // ch (w, cr)
+// Elapsed time: 16 seconds
+selectCodeEditor("adder.v", 811, 70); // ch (w, cr)
+// Elapsed time: 11 seconds
+selectCodeEditor("adder.v", 238, 185); // ch (w, cr)
+// Elapsed time: 69 seconds
+selectCodeEditor("adder.v", 284, 258); // ch (w, cr)
+selectCodeEditor("adder.v", 770, 206); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("adder.v", 227, 163); // ch (w, cr)
+// Elapsed time: 26 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net arith/adderout[0] has multiple drivers: ALUout_OBUF[0]_inst_i_10/O, ALUout_OBUF[0]_inst_i_3/O, ALUout_OBUF[0]_inst_i_4/O, ALUout_OBUF[0]_inst_i_5/O, ALUout_OBUF[0]_inst_i_6/O, ALUout_OBUF[0]_inst_i_7/O, ALUout_OBUF[0]_inst_i_8/O, and ALUout_OBUF[0]_inst_i_9/O.. ]", 8, true); // ah (O, cr) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net arith/adderout[0] has multiple drivers: ALUout_OBUF[0]_inst_i_10/O, ALUout_OBUF[0]_inst_i_3/O, ALUout_OBUF[0]_inst_i_4/O, ALUout_OBUF[0]_inst_i_5/O, ALUout_OBUF[0]_inst_i_6/O, ALUout_OBUF[0]_inst_i_7/O, ALUout_OBUF[0]_inst_i_8/O, and ALUout_OBUF[0]_inst_i_9/O.. ]", 8, true); // ah (O, cr) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net arith/adderout[0] has multiple drivers: ALUout_OBUF[0]_inst_i_10/O, ALUout_OBUF[0]_inst_i_3/O, ALUout_OBUF[0]_inst_i_4/O, ALUout_OBUF[0]_inst_i_5/O, ALUout_OBUF[0]_inst_i_6/O, ALUout_OBUF[0]_inst_i_7/O, ALUout_OBUF[0]_inst_i_8/O, and ALUout_OBUF[0]_inst_i_9/O.. ]", 8, true, false, false, false, false, true); // ah (O, cr) - Double Click - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 1,198 MB. GUI used memory: 84 MB. Current time: 3/31/20, 4:37:34 PM CEST
+// [Engine Memory]: 1,198 MB (+97038kb) [00:29:42]
+// Elapsed time: 13 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ALU (ALU.v), arith : arithmetic (arithmetic.v), adder1 : adder (adder.v)]", 3); // B (F, cr)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ALU (ALU.v), arith : arithmetic (arithmetic.v), adder1 : adder (adder.v)]", 3); // B (F, cr)
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "arithmetic.v", 0); // i (h, cr)
+selectCodeEditor("arithmetic.v", 310, 344); // ch (w, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net arith/adderout[0] has multiple drivers: ALUout_OBUF[0]_inst_i_10/O, ALUout_OBUF[0]_inst_i_3/O, ALUout_OBUF[0]_inst_i_4/O, ALUout_OBUF[0]_inst_i_5/O, ALUout_OBUF[0]_inst_i_6/O, ALUout_OBUF[0]_inst_i_7/O, ALUout_OBUF[0]_inst_i_8/O, and ALUout_OBUF[0]_inst_i_9/O.. , [DRC MDRV-1] Multiple Driver Nets: Net arith/adderout[3] has multiple drivers: ALUout_OBUF[0]_inst_i_16/O, ALUout_OBUF[0]_inst_i_13/O, ALUout_OBUF[0]_inst_i_12/O, ALUout_OBUF[0]_inst_i_17/O, ALUout_OBUF[0]_inst_i_18/O, ALUout_OBUF[0]_inst_i_14/O, ALUout_OBUF[0]_inst_i_15/O, and ALUout_OBUF[0]_inst_i_11/O.. ]", 9, false); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net arith/adderout[0] has multiple drivers: ALUout_OBUF[0]_inst_i_10/O, ALUout_OBUF[0]_inst_i_3/O, ALUout_OBUF[0]_inst_i_4/O, ALUout_OBUF[0]_inst_i_5/O, ALUout_OBUF[0]_inst_i_6/O, ALUout_OBUF[0]_inst_i_7/O, ALUout_OBUF[0]_inst_i_8/O, and ALUout_OBUF[0]_inst_i_9/O.. , [DRC MDRV-1] Multiple Driver Nets: Net arith/adderout[3] has multiple drivers: ALUout_OBUF[0]_inst_i_16/O, ALUout_OBUF[0]_inst_i_13/O, ALUout_OBUF[0]_inst_i_12/O, ALUout_OBUF[0]_inst_i_17/O, ALUout_OBUF[0]_inst_i_18/O, ALUout_OBUF[0]_inst_i_14/O, ALUout_OBUF[0]_inst_i_15/O, and ALUout_OBUF[0]_inst_i_11/O.. ]", 9, false, false, false, false, false, true); // ah (O, cr) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net arith/adderout[0] has multiple drivers: ALUout_OBUF[0]_inst_i_10/O, ALUout_OBUF[0]_inst_i_3/O, ALUout_OBUF[0]_inst_i_4/O, ALUout_OBUF[0]_inst_i_5/O, ALUout_OBUF[0]_inst_i_6/O, ALUout_OBUF[0]_inst_i_7/O, ALUout_OBUF[0]_inst_i_8/O, and ALUout_OBUF[0]_inst_i_9/O.. , [DRC MDRV-1] Multiple Driver Nets: Net arith/adderout[3] has multiple drivers: ALUout_OBUF[0]_inst_i_16/O, ALUout_OBUF[0]_inst_i_13/O, ALUout_OBUF[0]_inst_i_12/O, ALUout_OBUF[0]_inst_i_17/O, ALUout_OBUF[0]_inst_i_18/O, ALUout_OBUF[0]_inst_i_14/O, ALUout_OBUF[0]_inst_i_15/O, and ALUout_OBUF[0]_inst_i_11/O.. ]", 9, false); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net arith/adderout[0] has multiple drivers: ALUout_OBUF[0]_inst_i_10/O, ALUout_OBUF[0]_inst_i_3/O, ALUout_OBUF[0]_inst_i_4/O, ALUout_OBUF[0]_inst_i_5/O, ALUout_OBUF[0]_inst_i_6/O, ALUout_OBUF[0]_inst_i_7/O, ALUout_OBUF[0]_inst_i_8/O, and ALUout_OBUF[0]_inst_i_9/O.. , [DRC MDRV-1] Multiple Driver Nets: Net arith/adderout[3] has multiple drivers: ALUout_OBUF[0]_inst_i_16/O, ALUout_OBUF[0]_inst_i_13/O, ALUout_OBUF[0]_inst_i_12/O, ALUout_OBUF[0]_inst_i_17/O, ALUout_OBUF[0]_inst_i_18/O, ALUout_OBUF[0]_inst_i_14/O, ALUout_OBUF[0]_inst_i_15/O, and ALUout_OBUF[0]_inst_i_11/O.. ]", 9, false); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net arith/adderout[0] has multiple drivers: ALUout_OBUF[0]_inst_i_10/O, ALUout_OBUF[0]_inst_i_3/O, ALUout_OBUF[0]_inst_i_4/O, ALUout_OBUF[0]_inst_i_5/O, ALUout_OBUF[0]_inst_i_6/O, ALUout_OBUF[0]_inst_i_7/O, ALUout_OBUF[0]_inst_i_8/O, and ALUout_OBUF[0]_inst_i_9/O.. ]", 8, true); // ah (O, cr) - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "adder.v", 1); // i (h, cr)
+selectCodeEditor("adder.v", 532, 234); // ch (w, cr)
+// Elapsed time: 27 seconds
+selectCodeEditor("adder.v", 284, 115); // ch (w, cr)
+selectCodeEditor("adder.v", 214, 110); // ch (w, cr)
+// Elapsed time: 17 seconds
+selectCodeEditor("adder.v", 312, 116); // ch (w, cr)
+selectCodeEditor("adder.v", 800, 264); // ch (w, cr)
+selectCodeEditor("adder.v", 291, 213); // ch (w, cr)
+selectCodeEditor("adder.v", 752, 290); // ch (w, cr)
+selectCodeEditor("adder.v", 814, 297); // ch (w, cr)
+selectCodeEditor("adder.v", 646, 289); // ch (w, cr)
+selectCodeEditor("adder.v", 426, 314); // ch (w, cr)
+selectCodeEditor("adder.v", 505, 389); // ch (w, cr)
+selectCodeEditor("adder.v", 568, 386); // ch (w, cr)
+selectCodeEditor("adder.v", 599, 221); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("adder.v", 486, 218); // ch (w, cr)
+selectCodeEditor("adder.v", 891, 113); // ch (w, cr)
+// Elapsed time: 28 seconds
+selectCodeEditor("adder.v", 815, 268); // ch (w, cr)
+selectCodeEditor("adder.v", 946, 215); // ch (w, cr)
+// Elapsed time: 15 seconds
+selectCodeEditor("adder.v", 1151, 213); // ch (w, cr)
+selectCodeEditor("adder.v", 1064, 218); // ch (w, cr)
+selectCodeEditor("adder.v", 1041, 268); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+selectCodeEditor("adder.v", 130, 86); // ch (w, cr)
+selectCodeEditor("adder.v", 355, 90); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("adder.v", 355, 90, false, true, false, false, true); // ch (w, cr) - Control Key - Double Click
+selectCodeEditor("adder.v", 362, 93); // ch (w, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bB (cr):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cr)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: [Tue Mar 31 16:41:35 2020] Launched synth_1... Run output will be captured here: C:/Users/Yann/digitec/report5/report5.runs/synth_1/runme.log [Tue Mar 31 16:41:35 2020] Launched impl_1... Run output will be captured here: C:/Users/Yann/digitec/report5/report5.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Implementation Completed: addNotify
+// Elapsed time: 185 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (aj)
+dismissDialog("Implementation Completed"); // aj (cr)
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18, true); // u (O, cr) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bB (cr):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,554 MB. GUI used memory: 84 MB. Current time: 3/31/20, 4:44:59 PM CEST
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a (bB)
+// TclEventType: DESIGN_CLOSE
+// TclEventType: DESIGN_NEW_FAILED
+// [Engine Memory]: 1,554 MB (+310273kb) [00:36:58]
+// TclEventType: DESIGN_NEW_FAILED
+// CommandFailedException: ERROR: [Common 17-69] Command failed:  
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a35tcpg236-1 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1500.422 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2019.2 INFO: [Common 17-41] Interrupt caught. Command should exit soon. 
+// Tcl Message: open_run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1500.422 ; gain = 222.488 
+// Tcl Message: INFO: [Common 17-344] 'open_run' was cancelled 
+// 'dQ' command handler elapsed time: 6 seconds
+dismissDialog("Open Implemented Design"); // bB (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // aa (q, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_PROJECT_SUMMARY, "Project Summary"); // ai (cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // aa (q, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROJECT_SUMMARY
+// Elapsed time: 38 seconds
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_PANEL_TABBED, PAResourceOtoP.ProjectSummaryUtilizationPanel_TABLE, "Table", 1); // f (E, cr)
+// Elapsed time: 243 seconds
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationGadget_PROJECT_SUMMARY_UTILIZATION_GADGET_TABBED, PAResourceOtoP.ProjectSummaryUtilizationGadget_POST_SYNTHESIS, "Post-Synthesis", 0); // b (E, cr)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_PANEL_TABBED, PAResourceOtoP.ProjectSummaryUtilizationPanel_TABLE, "Table", 1); // f (E, cr)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationGadget_PROJECT_SUMMARY_UTILIZATION_GADGET_TABBED, PAResourceOtoP.ProjectSummaryUtilizationGadget_POST_IMPLEMENTATION, "Post-Implementation", 1); // b (E, cr)
+// Elapsed time: 10 seconds
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationGadget_PROJECT_SUMMARY_UTILIZATION_GADGET_TABBED, PAResourceOtoP.ProjectSummaryUtilizationGadget_POST_SYNTHESIS, "Post-Synthesis", 0); // b (E, cr)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationGadget_PROJECT_SUMMARY_UTILIZATION_GADGET_TABBED, PAResourceOtoP.ProjectSummaryUtilizationGadget_POST_IMPLEMENTATION, "Post-Implementation", 1); // b (E, cr)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationGadget_PROJECT_SUMMARY_UTILIZATION_GADGET_TABBED, PAResourceOtoP.ProjectSummaryUtilizationGadget_POST_SYNTHESIS, "Post-Synthesis", 0); // b (E, cr)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationGadget_PROJECT_SUMMARY_UTILIZATION_GADGET_TABBED, PAResourceOtoP.ProjectSummaryUtilizationGadget_POST_IMPLEMENTATION, "Post-Implementation", 1); // b (E, cr)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationGadget_PROJECT_SUMMARY_UTILIZATION_GADGET_TABBED, PAResourceOtoP.ProjectSummaryUtilizationGadget_POST_SYNTHESIS, "Post-Synthesis", 0); // b (E, cr)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationGadget_PROJECT_SUMMARY_UTILIZATION_GADGET_TABBED, PAResourceOtoP.ProjectSummaryUtilizationGadget_POST_IMPLEMENTATION, "Post-Implementation", 1); // b (E, cr)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationGadget_PROJECT_SUMMARY_UTILIZATION_GADGET_TABBED, PAResourceOtoP.ProjectSummaryUtilizationGadget_POST_SYNTHESIS, "Post-Synthesis", 0); // b (E, cr)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationGadget_PROJECT_SUMMARY_UTILIZATION_GADGET_TABBED, PAResourceOtoP.ProjectSummaryUtilizationGadget_POST_IMPLEMENTATION, "Post-Implementation", 1); // b (E, cr)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationGadget_PROJECT_SUMMARY_UTILIZATION_GADGET_TABBED, PAResourceOtoP.ProjectSummaryUtilizationGadget_POST_SYNTHESIS, "Post-Synthesis", 0); // b (E, cr)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationGadget_PROJECT_SUMMARY_UTILIZATION_GADGET_TABBED, PAResourceOtoP.ProjectSummaryUtilizationGadget_POST_IMPLEMENTATION, "Post-Implementation", 1); // b (E, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // aa (q, cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // aa (q, cr)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // aa (q, cr)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // aa (q, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_PROJECT_SUMMARY, "Project Summary"); // ai (cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // aa (q, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROJECT_SUMMARY
+// Elapsed time: 11 seconds
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_PANEL_TABBED, PAResourceOtoP.ProjectSummaryUtilizationPanel_TABLE, "Table", 1); // f (E, cr)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationGadget_PROJECT_SUMMARY_UTILIZATION_GADGET_TABBED, PAResourceOtoP.ProjectSummaryUtilizationGadget_POST_SYNTHESIS, "Post-Synthesis", 0); // b (E, cr)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_PANEL_TABBED, PAResourceOtoP.ProjectSummaryUtilizationPanel_TABLE, "Table", 1); // f (E, cr)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationGadget_PROJECT_SUMMARY_UTILIZATION_GADGET_TABBED, PAResourceOtoP.ProjectSummaryUtilizationGadget_POST_IMPLEMENTATION, "Post-Implementation", 1); // b (E, cr)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_PANEL_TABBED, PAResourceOtoP.ProjectSummaryUtilizationPanel_TABLE, "Table", 1); // f (E, cr)

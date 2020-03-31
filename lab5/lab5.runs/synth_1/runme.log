@@ -1,0 +1,577 @@
+
+*** Running vivado
+    with args -log ALU.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ALU.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source ALU.tcl -notrace
+Command: synth_design -top ALU -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9168 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 948.926 ; gain = 233.574
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/Yann/digitec/lab5/lab5.srcs/sources_1/new/ALU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'arithmetic' [C:/Users/Yann/digitec/lab5/lab5.srcs/sources_1/new/arithmetic.v:4]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/Yann/digitec/lab5/lab5.srcs/sources_1/new/adder.v:3]
+INFO: [Synth 8-6157] synthesizing module 'FullAdder' [C:/Users/Yann/digitec/lab5/lab5.srcs/sources_1/new/adder.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'FullAdder' (1#1) [C:/Users/Yann/digitec/lab5/lab5.srcs/sources_1/new/adder.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (2#1) [C:/Users/Yann/digitec/lab5/lab5.srcs/sources_1/new/adder.v:3]
+INFO: [Synth 8-6157] synthesizing module 'extender' [C:/Users/Yann/digitec/lab5/lab5.srcs/sources_1/new/extender.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'extender' (3#1) [C:/Users/Yann/digitec/lab5/lab5.srcs/sources_1/new/extender.v:5]
+WARNING: [Synth 8-689] width (1) of port connection 'extended' does not match port width (32) of module 'extender' [C:/Users/Yann/digitec/lab5/lab5.srcs/sources_1/new/arithmetic.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'arithmetic' (4#1) [C:/Users/Yann/digitec/lab5/lab5.srcs/sources_1/new/arithmetic.v:4]
+WARNING: [Synth 8-689] width (1) of port connection 'arithout' does not match port width (32) of module 'arithmetic' [C:/Users/Yann/digitec/lab5/lab5.srcs/sources_1/new/ALU.v:10]
+INFO: [Synth 8-6157] synthesizing module 'logical' [C:/Users/Yann/digitec/lab5/lab5.srcs/sources_1/new/logical.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'logical' (5#1) [C:/Users/Yann/digitec/lab5/lab5.srcs/sources_1/new/logical.v:4]
+WARNING: [Synth 8-689] width (1) of port connection 'logicalout' does not match port width (32) of module 'logical' [C:/Users/Yann/digitec/lab5/lab5.srcs/sources_1/new/ALU.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (6#1) [C:/Users/Yann/digitec/lab5/lab5.srcs/sources_1/new/ALU.v:3]
+WARNING: [Synth 8-3917] design ALU has port ALUout[31] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[30] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[29] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[28] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[27] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[26] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[25] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[24] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[23] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[22] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[21] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[20] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[19] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[18] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[17] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[16] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[15] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[14] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[13] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[12] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[11] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[10] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[9] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[8] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[7] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[6] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[5] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[4] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[3] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[2] driven by constant 0
+WARNING: [Synth 8-3331] design logical has unconnected port ALUopt[3]
+WARNING: [Synth 8-3331] design logical has unconnected port ALUopt[2]
+WARNING: [Synth 8-3331] design arithmetic has unconnected port ALUopt[2]
+WARNING: [Synth 8-3331] design arithmetic has unconnected port ALUopt[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1022.535 ; gain = 307.184
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1022.535 ; gain = 307.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1022.535 ; gain = 307.184
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1022.535 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc]
+INFO: [Vivado 12-2286] Implicit search of objects for pattern '*' matched to 'port' objects. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+INFO: [Vivado 12-2286] Implicit search of objects for pattern '*' matched to 'port' objects. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+WARNING: [Constraints 18-402] set_max_delay: 'ALUout[0]' is not a valid startpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'ALUout[10]' is not a valid startpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'ALUout[11]' is not a valid startpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'ALUout[12]' is not a valid startpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'ALUout[13]' is not a valid startpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'ALUout[14]' is not a valid startpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'ALUout[15]' is not a valid startpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'ALUout[16]' is not a valid startpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'ALUout[17]' is not a valid startpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'ALUout[18]' is not a valid startpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'ALUout[19]' is not a valid startpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'ALUout[1]' is not a valid startpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'ALUout[20]' is not a valid startpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'ALUout[21]' is not a valid startpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'ALUout[22]' is not a valid startpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'ALUout[23]' is not a valid startpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'ALUout[24]' is not a valid startpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'ALUout[25]' is not a valid startpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'ALUout[26]' is not a valid startpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'ALUout[27]' is not a valid startpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'ALUout[28]' is not a valid startpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'ALUout[29]' is not a valid startpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'ALUout[2]' is not a valid startpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'ALUout[30]' is not a valid startpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'ALUout[31]' is not a valid startpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'ALUout[3]' is not a valid startpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'ALUout[4]' is not a valid startpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'ALUout[5]' is not a valid startpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'ALUout[6]' is not a valid startpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'ALUout[7]' is not a valid startpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'ALUout[8]' is not a valid startpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'ALUout[9]' is not a valid startpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'zero' is not a valid startpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'ALUopt[0]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'ALUopt[1]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'ALUopt[2]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'ALUopt[3]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[0]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[10]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[11]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[12]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[13]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[14]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[15]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[16]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[17]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[18]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[19]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[1]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[20]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[21]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[22]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[23]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[24]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[25]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[26]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[27]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[28]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[29]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[2]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[30]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[31]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[3]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[4]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[5]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[6]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[7]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[8]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[9]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[0]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[10]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[11]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[12]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[13]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[14]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[15]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[16]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[17]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[18]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[19]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[1]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[20]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[21]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[22]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[23]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[24]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[25]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[26]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[27]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[28]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[29]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[2]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[30]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[31]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[3]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[4]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[5]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[6]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[7]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[8]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[9]' is not a valid endpoint. [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+Finished Parsing XDC File [C:/Users/Yann/digitec/lab5/lab5.srcs/constrs_1/new/contraints.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1106.906 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1106.906 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1106.906 ; gain = 391.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1106.906 ; gain = 391.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1106.906 ; gain = 391.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1106.906 ; gain = 391.555
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   3 Input      1 Bit         XORs := 32    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ALU 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module FullAdder 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 1     
+Module arithmetic 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module logical 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design ALU has port ALUout[31] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[30] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[29] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[28] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[27] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[26] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[25] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[24] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[23] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[22] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[21] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[20] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[19] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[18] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[17] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[16] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[15] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[14] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[13] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[12] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[11] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[10] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[9] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[8] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[7] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[6] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[5] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[4] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[3] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[2] driven by constant 0
+WARNING: [Synth 8-3917] design ALU has port ALUout[1] driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1106.906 ; gain = 391.555
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1106.906 ; gain = 391.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1106.906 ; gain = 391.555
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1111.258 ; gain = 395.906
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 1127.051 ; gain = 411.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 1127.051 ; gain = 411.699
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 1127.051 ; gain = 411.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 1127.051 ; gain = 411.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 1127.051 ; gain = 411.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 1127.051 ; gain = 411.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     8|
+|2     |LUT1   |    32|
+|3     |LUT3   |    24|
+|4     |LUT4   |    12|
+|5     |LUT5   |     1|
+|6     |LUT6   |    14|
+|7     |IBUF   |    68|
+|8     |OBUF   |    33|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   192|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 1127.051 ; gain = 411.699
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 31 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:50 . Memory (MB): peak = 1127.051 ; gain = 327.328
+Synthesis Optimization Complete : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 1127.051 ; gain = 411.699
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1138.059 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1142.371 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 169 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 1142.371 ; gain = 717.055
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1142.371 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Yann/digitec/lab5/lab5.runs/synth_1/ALU.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ALU_utilization_synth.rpt -pb ALU_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 31 15:41:10 2020...

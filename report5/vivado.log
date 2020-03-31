@@ -1,0 +1,58 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Mar 31 16:07:54 2020
+# Process ID: 2760
+# Current directory: C:/Users/Yann/digitec/report5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17284 C:\Users\Yann\digitec\report5\report5.xpr
+# Log file: C:/Users/Yann/digitec/report5/vivado.log
+# Journal file: C:/Users/Yann/digitec/report5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Yann/digitec/report5/report5.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:14 . Memory (MB): peak = 898.066 ; gain = 246.434
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+open_project C:/Users/Yann/digitec/lab5/lab5.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 961.598 ; gain = 2.379
+update_compile_order -fileset sources_1
+current_project report5
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+[Tue Mar 31 16:26:52 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Yann/digitec/report5/report5.runs/synth_1/runme.log
+[Tue Mar 31 16:26:52 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Yann/digitec/report5/report5.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+[Tue Mar 31 16:33:17 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Yann/digitec/report5/report5.runs/synth_1/runme.log
+[Tue Mar 31 16:33:17 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Yann/digitec/report5/report5.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+[Tue Mar 31 16:41:35 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Yann/digitec/report5/report5.runs/synth_1/runme.log
+[Tue Mar 31 16:41:35 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Yann/digitec/report5/report5.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1500.422 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+open_run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1500.422 ; gain = 222.488
+INFO: [Common 17-344] 'open_run' was cancelled

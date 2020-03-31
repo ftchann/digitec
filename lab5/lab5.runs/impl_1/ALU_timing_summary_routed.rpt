@@ -1,0 +1,324 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Mar 31 15:43:07 2020
+| Host         : DESKTOP-JPHN0MJ running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -file ALU_timing_summary_routed.rpt -pb ALU_timing_summary_routed.pb -rpx ALU_timing_summary_routed.rpx -warn_on_violation
+| Design       : ALU
+| Device       : 7a35t-cpg236
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 0 input ports with no input delay specified.
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 0 ports with no output delay specified.
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 68 input ports with partial input delay specified. (HIGH)
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      1.280        0.000                      0                    2           NA           NA                     NA                   NA           NA           NA                      NA                    NA  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group        From Clock        To Clock              WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------        ----------        --------              -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+**default**       input port clock                          1.280        0.000                      0                    2                                                                        
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+Path Group:  **default**
+From Clock:  input port clock
+  To Clock:  
+
+Setup :            0  Failing Endpoints,  Worst Slack        1.280ns,  Total Violation        0.000ns
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             1.280ns  (required time - arrival time)
+  Source:                 B[0]
+                            (input port)
+  Destination:            ALUout[0]
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            20.000ns  (MaxDelay Path 20.000ns)
+  Data Path Delay:        18.720ns  (logic 6.487ns (34.652%)  route 12.233ns (65.348%))
+  Logic Levels:           18  (CARRY4=2 IBUF=1 LUT1=1 LUT3=1 LUT5=1 LUT6=11 OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 20.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    U14                                               0.000     0.000 f  B[0] (IN)
+                         net (fo=0)                   0.000     0.000    B[0]
+    U14                  IBUF (Prop_ibuf_I_O)         0.936     0.936 f  B_IBUF[0]_inst/O
+                         net (fo=5, routed)           1.798     2.734    B_IBUF[0]
+    SLICE_X15Y24         LUT1 (Prop_lut1_I0_O)        0.124     2.858 r  ALUout_OBUF[0]_inst_i_74/O
+                         net (fo=1, routed)           0.359     3.217    p_0_in[0]
+    SLICE_X14Y25         CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.595     3.812 r  ALUout_OBUF[0]_inst_i_65/CO[3]
+                         net (fo=1, routed)           0.000     3.812    ALUout_OBUF[0]_inst_i_65_n_0
+    SLICE_X14Y26         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219     4.031 r  ALUout_OBUF[0]_inst_i_56/O[0]
+                         net (fo=1, routed)           0.776     4.806    Bnew1[5]
+    SLICE_X15Y26         LUT3 (Prop_lut3_I0_O)        0.321     5.128 r  ALUout_OBUF[0]_inst_i_85/O
+                         net (fo=1, routed)           1.059     6.187    ALUout_OBUF[0]_inst_i_85_n_0
+    SLICE_X28Y25         LUT6 (Prop_lut6_I3_O)        0.326     6.513 r  ALUout_OBUF[0]_inst_i_82/O
+                         net (fo=1, routed)           0.406     6.919    ALUout_OBUF[0]_inst_i_82_n_0
+    SLICE_X29Y26         LUT6 (Prop_lut6_I5_O)        0.124     7.043 f  ALUout_OBUF[0]_inst_i_71/O
+                         net (fo=1, routed)           0.453     7.496    ALUout_OBUF[0]_inst_i_71_n_0
+    SLICE_X30Y27         LUT6 (Prop_lut6_I1_O)        0.124     7.620 r  ALUout_OBUF[0]_inst_i_64/O
+                         net (fo=1, routed)           0.620     8.240    ALUout_OBUF[0]_inst_i_64_n_0
+    SLICE_X32Y33         LUT6 (Prop_lut6_I5_O)        0.124     8.364 f  ALUout_OBUF[0]_inst_i_53/O
+                         net (fo=1, routed)           0.159     8.522    ALUout_OBUF[0]_inst_i_53_n_0
+    SLICE_X32Y33         LUT6 (Prop_lut6_I1_O)        0.124     8.646 r  ALUout_OBUF[0]_inst_i_46/O
+                         net (fo=1, routed)           0.442     9.089    ALUout_OBUF[0]_inst_i_46_n_0
+    SLICE_X32Y35         LUT6 (Prop_lut6_I5_O)        0.124     9.213 f  ALUout_OBUF[0]_inst_i_35/O
+                         net (fo=1, routed)           0.159     9.371    ALUout_OBUF[0]_inst_i_35_n_0
+    SLICE_X32Y35         LUT6 (Prop_lut6_I1_O)        0.124     9.495 r  ALUout_OBUF[0]_inst_i_28/O
+                         net (fo=1, routed)           0.647    10.142    ALUout_OBUF[0]_inst_i_28_n_0
+    SLICE_X32Y41         LUT6 (Prop_lut6_I5_O)        0.124    10.266 f  ALUout_OBUF[0]_inst_i_17/O
+                         net (fo=1, routed)           0.158    10.424    ALUout_OBUF[0]_inst_i_17_n_0
+    SLICE_X32Y41         LUT6 (Prop_lut6_I1_O)        0.124    10.548 r  ALUout_OBUF[0]_inst_i_9/O
+                         net (fo=1, routed)           0.649    11.198    ALUout_OBUF[0]_inst_i_9_n_0
+    SLICE_X34Y47         LUT5 (Prop_lut5_I0_O)        0.124    11.322 r  ALUout_OBUF[0]_inst_i_6/O
+                         net (fo=1, routed)           0.648    11.970    ALUout_OBUF[0]_inst_i_6_n_0
+    SLICE_X38Y53         LUT6 (Prop_lut6_I4_O)        0.124    12.094 r  ALUout_OBUF[0]_inst_i_2/O
+                         net (fo=2, routed)           0.455    12.548    ALUout_OBUF[0]_inst_i_2_n_0
+    SLICE_X37Y54         LUT6 (Prop_lut6_I4_O)        0.124    12.672 r  ALUout_OBUF[0]_inst_i_1/O
+                         net (fo=1, routed)           3.446    16.119    ALUout_OBUF[0]
+    W18                  OBUF (Prop_obuf_I_O)         2.602    18.720 r  ALUout_OBUF[0]_inst/O
+                         net (fo=0)                   0.000    18.720    ALUout[0]
+    W18                                                               r  ALUout[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   20.000    20.000    
+                         clock pessimism              0.000    20.000    
+                         output delay                -0.000    20.000    
+  -------------------------------------------------------------------
+                         required time                         20.000    
+                         arrival time                         -18.720    
+  -------------------------------------------------------------------
+                         slack                                  1.280    
+
+Slack (MET) :             1.429ns  (required time - arrival time)
+  Source:                 B[0]
+                            (input port)
+  Destination:            zero
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            20.000ns  (MaxDelay Path 20.000ns)
+  Data Path Delay:        18.571ns  (logic 6.483ns (34.912%)  route 12.087ns (65.088%))
+  Logic Levels:           18  (CARRY4=2 IBUF=1 LUT1=1 LUT3=1 LUT5=1 LUT6=11 OBUF=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 20.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    U14                                               0.000     0.000 f  B[0] (IN)
+                         net (fo=0)                   0.000     0.000    B[0]
+    U14                  IBUF (Prop_ibuf_I_O)         0.936     0.936 f  B_IBUF[0]_inst/O
+                         net (fo=5, routed)           1.798     2.734    B_IBUF[0]
+    SLICE_X15Y24         LUT1 (Prop_lut1_I0_O)        0.124     2.858 r  ALUout_OBUF[0]_inst_i_74/O
+                         net (fo=1, routed)           0.359     3.217    p_0_in[0]
+    SLICE_X14Y25         CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.595     3.812 r  ALUout_OBUF[0]_inst_i_65/CO[3]
+                         net (fo=1, routed)           0.000     3.812    ALUout_OBUF[0]_inst_i_65_n_0
+    SLICE_X14Y26         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219     4.031 r  ALUout_OBUF[0]_inst_i_56/O[0]
+                         net (fo=1, routed)           0.776     4.806    Bnew1[5]
+    SLICE_X15Y26         LUT3 (Prop_lut3_I0_O)        0.321     5.128 r  ALUout_OBUF[0]_inst_i_85/O
+                         net (fo=1, routed)           1.059     6.187    ALUout_OBUF[0]_inst_i_85_n_0
+    SLICE_X28Y25         LUT6 (Prop_lut6_I3_O)        0.326     6.513 r  ALUout_OBUF[0]_inst_i_82/O
+                         net (fo=1, routed)           0.406     6.919    ALUout_OBUF[0]_inst_i_82_n_0
+    SLICE_X29Y26         LUT6 (Prop_lut6_I5_O)        0.124     7.043 f  ALUout_OBUF[0]_inst_i_71/O
+                         net (fo=1, routed)           0.453     7.496    ALUout_OBUF[0]_inst_i_71_n_0
+    SLICE_X30Y27         LUT6 (Prop_lut6_I1_O)        0.124     7.620 r  ALUout_OBUF[0]_inst_i_64/O
+                         net (fo=1, routed)           0.620     8.240    ALUout_OBUF[0]_inst_i_64_n_0
+    SLICE_X32Y33         LUT6 (Prop_lut6_I5_O)        0.124     8.364 f  ALUout_OBUF[0]_inst_i_53/O
+                         net (fo=1, routed)           0.159     8.522    ALUout_OBUF[0]_inst_i_53_n_0
+    SLICE_X32Y33         LUT6 (Prop_lut6_I1_O)        0.124     8.646 r  ALUout_OBUF[0]_inst_i_46/O
+                         net (fo=1, routed)           0.442     9.089    ALUout_OBUF[0]_inst_i_46_n_0
+    SLICE_X32Y35         LUT6 (Prop_lut6_I5_O)        0.124     9.213 f  ALUout_OBUF[0]_inst_i_35/O
+                         net (fo=1, routed)           0.159     9.371    ALUout_OBUF[0]_inst_i_35_n_0
+    SLICE_X32Y35         LUT6 (Prop_lut6_I1_O)        0.124     9.495 r  ALUout_OBUF[0]_inst_i_28/O
+                         net (fo=1, routed)           0.647    10.142    ALUout_OBUF[0]_inst_i_28_n_0
+    SLICE_X32Y41         LUT6 (Prop_lut6_I5_O)        0.124    10.266 f  ALUout_OBUF[0]_inst_i_17/O
+                         net (fo=1, routed)           0.158    10.424    ALUout_OBUF[0]_inst_i_17_n_0
+    SLICE_X32Y41         LUT6 (Prop_lut6_I1_O)        0.124    10.548 r  ALUout_OBUF[0]_inst_i_9/O
+                         net (fo=1, routed)           0.649    11.198    ALUout_OBUF[0]_inst_i_9_n_0
+    SLICE_X34Y47         LUT5 (Prop_lut5_I0_O)        0.124    11.322 r  ALUout_OBUF[0]_inst_i_6/O
+                         net (fo=1, routed)           0.648    11.970    ALUout_OBUF[0]_inst_i_6_n_0
+    SLICE_X38Y53         LUT6 (Prop_lut6_I4_O)        0.124    12.094 f  ALUout_OBUF[0]_inst_i_2/O
+                         net (fo=2, routed)           0.302    12.396    ALUout_OBUF[0]_inst_i_2_n_0
+    SLICE_X39Y53         LUT6 (Prop_lut6_I1_O)        0.124    12.520 r  zero_OBUF_inst_i_1/O
+                         net (fo=1, routed)           3.453    15.973    zero_OBUF
+    J1                   OBUF (Prop_obuf_I_O)         2.598    18.571 r  zero_OBUF_inst/O
+                         net (fo=0)                   0.000    18.571    zero
+    J1                                                                r  zero (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   20.000    20.000    
+                         clock pessimism              0.000    20.000    
+                         output delay                -0.000    20.000    
+  -------------------------------------------------------------------
+                         required time                         20.000    
+                         arrival time                         -18.571    
+  -------------------------------------------------------------------
+                         slack                                  1.429    
+
+
+
+
+
