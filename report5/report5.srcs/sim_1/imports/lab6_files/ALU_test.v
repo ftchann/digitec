@@ -94,6 +94,7 @@ module ALU_test;
 			// Display message
 			$display("Error at %5d ns: Aluop %b a=%h b=%h", $time, aluop,a,b);	// %h displays hex
 			$display("       %h (%h expected)",result,exp_result);
+			$display("       %b",result);
 			$display(" Zero: %b (%b expected)",zero,exp_zero);							// %b displays binary
 			err_cnt = err_cnt + 1;																// increment error count
 		end

@@ -52,20 +52,19 @@ extern void execute_2(char*, char *);
 extern void execute_3(char*, char *);
 extern void execute_4(char*, char *);
 extern void execute_59(char*, char *);
+extern void execute_225(char*, char *);
 extern void execute_226(char*, char *);
 extern void execute_227(char*, char *);
 extern void execute_228(char*, char *);
 extern void execute_229(char*, char *);
-extern void execute_230(char*, char *);
 extern void execute_54(char*, char *);
+extern void execute_223(char*, char *);
 extern void execute_224(char*, char *);
-extern void execute_225(char*, char *);
 extern void execute_7(char*, char *);
 extern void execute_51(char*, char *);
-extern void execute_222(char*, char *);
-extern void execute_223(char*, char *);
-extern void execute_220(char*, char *);
 extern void execute_221(char*, char *);
+extern void execute_222(char*, char *);
+extern void vlog_const_rhs_process_execute_0_fast_no_reg_no_agg(char*, char*, char*);
 extern void execute_60(char*, char *);
 extern void execute_61(char*, char *);
 extern void execute_62(char*, char *);
@@ -76,18 +75,18 @@ extern void execute_53(char*, char *);
 extern void execute_56(char*, char *);
 extern void execute_57(char*, char *);
 extern void execute_58(char*, char *);
+extern void execute_230(char*, char *);
 extern void execute_231(char*, char *);
 extern void execute_232(char*, char *);
 extern void execute_233(char*, char *);
 extern void execute_234(char*, char *);
-extern void execute_235(char*, char *);
 extern void vlog_transfunc_eventcallback(char*, char*, unsigned, unsigned, unsigned, char *);
-funcp funcTab[34] = {(funcp)execute_2, (funcp)execute_3, (funcp)execute_4, (funcp)execute_59, (funcp)execute_226, (funcp)execute_227, (funcp)execute_228, (funcp)execute_229, (funcp)execute_230, (funcp)execute_54, (funcp)execute_224, (funcp)execute_225, (funcp)execute_7, (funcp)execute_51, (funcp)execute_222, (funcp)execute_223, (funcp)execute_220, (funcp)execute_221, (funcp)execute_60, (funcp)execute_61, (funcp)execute_62, (funcp)execute_63, (funcp)execute_64, (funcp)execute_50, (funcp)execute_53, (funcp)execute_56, (funcp)execute_57, (funcp)execute_58, (funcp)execute_231, (funcp)execute_232, (funcp)execute_233, (funcp)execute_234, (funcp)execute_235, (funcp)vlog_transfunc_eventcallback};
-const int NumRelocateId= 34;
+funcp funcTab[33] = {(funcp)execute_2, (funcp)execute_3, (funcp)execute_4, (funcp)execute_59, (funcp)execute_225, (funcp)execute_226, (funcp)execute_227, (funcp)execute_228, (funcp)execute_229, (funcp)execute_54, (funcp)execute_223, (funcp)execute_224, (funcp)execute_7, (funcp)execute_51, (funcp)execute_221, (funcp)execute_222, (funcp)vlog_const_rhs_process_execute_0_fast_no_reg_no_agg, (funcp)execute_60, (funcp)execute_61, (funcp)execute_62, (funcp)execute_63, (funcp)execute_64, (funcp)execute_50, (funcp)execute_53, (funcp)execute_56, (funcp)execute_57, (funcp)execute_58, (funcp)execute_230, (funcp)execute_231, (funcp)execute_232, (funcp)execute_233, (funcp)execute_234, (funcp)vlog_transfunc_eventcallback};
+const int NumRelocateId= 33;
 
 void relocate(char *dp)
 {
-	iki_relocate(dp, "xsim.dir/ALU_test_behav/xsim.reloc",  (void **)funcTab, 34);
+	iki_relocate(dp, "xsim.dir/ALU_test_behav/xsim.reloc",  (void **)funcTab, 33);
 
 	/*Populate the transaction function pointer field in the whole net structure */
 }

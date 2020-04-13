@@ -5,14 +5,14 @@ input [31:0] A,
 input [31:0] Bnew,
 output [31:0] adderout
 );
-    wire [31:0] carry = 0;
+    wire [31:0] carry;
     genvar i;
     for(i = 0; i < 29; i = i + 4) 
     begin
         if(i == 0)
-            begin FourBitAdder fourbitadder(A [i+3:i], Bnew[i+3:i], 0, adderout[i+3:i], carry[i+3]); end
+            begin FourBitAdder fourbitadder(A [i+3:i], Bnew[i+3:i], 1'b0, adderout[i+3:i], carry[i+3]); end
         else
-            begin FourBitAdder fourbitadder(A [i+3:i], Bnew[i+3:i], carry[i-1], adderout[i+3:i], carry[i+3]); end 
+            begin FourBitAdder fourbitadder(A [i+3:i], Bnew [i+3:i], carry[i-1], adderout[i+3:i], carry[i+3]); end 
     end
 endmodule
 module FullAdder(input a, input b, input ci, output s, output co);
