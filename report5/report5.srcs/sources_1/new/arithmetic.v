@@ -11,6 +11,7 @@ reg [31:0] Bnew;
 always @(*)
 begin Bnew = (ALUopt[1]) ? ((~B) + 1): B; end
 wire [31:0] adderout;
+wire [31:0] extendout;
 adder adder1(A, Bnew, adderout);
 extender extender1(adderout[31], extendout);
 always @(*)

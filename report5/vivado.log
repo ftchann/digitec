@@ -56,3 +56,4 @@ INFO: [Project 1-479] Netlist was created with Vivado 2019.2
 INFO: [Common 17-41] Interrupt caught. Command should exit soon.
 open_run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1500.422 ; gain = 222.488
 INFO: [Common 17-344] 'open_run' was cancelled
+close_project

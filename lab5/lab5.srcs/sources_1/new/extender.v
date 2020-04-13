@@ -8,6 +8,6 @@ output reg [31:0] extended
 );
 always @(*)
 begin
-    extended <= {{31{toextend}},toextend};
+    extended <= {32{toextend}};
 end
 endmodule

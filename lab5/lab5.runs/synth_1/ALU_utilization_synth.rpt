@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Tue Mar 31 15:41:10 2020
+| Date         : Tue Apr  7 11:13:20 2020
 | Host         : DESKTOP-JPHN0MJ running 64-bit major release  (build 9200)
 | Command      : report_utilization -file ALU_utilization_synth.rpt -pb ALU_utilization_synth.pb
 | Design       : ALU
@@ -30,8 +30,8 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |   66 |     0 |     20800 |  0.32 |
-|   LUT as Logic          |   66 |     0 |     20800 |  0.32 |
+| Slice LUTs*             |  136 |     0 |     20800 |  0.65 |
+|   LUT as Logic          |  136 |     0 |     20800 |  0.65 |
 |   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
 | Slice Registers         |    0 |     0 |     41600 |  0.00 |
 |   Register as Flip Flop |    0 |     0 |     41600 |  0.00 |
@@ -150,13 +150,13 @@ Table of Contents
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | IBUF     |   68 |                  IO |
+| LUT4     |   67 |                 LUT |
+| LUT5     |   35 |                 LUT |
 | OBUF     |   33 |                  IO |
 | LUT1     |   32 |                 LUT |
-| LUT3     |   24 |                 LUT |
-| LUT6     |   14 |                 LUT |
-| LUT4     |   12 |                 LUT |
-| CARRY4   |    8 |          CarryLogic |
-| LUT5     |    1 |                 LUT |
+| CARRY4   |   16 |          CarryLogic |
+| LUT6     |    1 |                 LUT |
+| LUT2     |    1 |                 LUT |
 +----------+------+---------------------+
 
 

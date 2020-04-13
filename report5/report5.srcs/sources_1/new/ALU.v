@@ -7,8 +7,10 @@ input [3:0] ALUopt,
 output reg [31:0] ALUout,
 output reg zero
 );
+wire [31:0] logicout;
+wire [31:0] arithout;
 arithmetic arith(A, B, ALUopt, arithout);
-logical log(, B, ALUopt, logicout);
+logical log(A, B, ALUopt, logicout);
 
 always @(*)
 begin 
