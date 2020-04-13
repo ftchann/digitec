@@ -30,11 +30,11 @@ set_property target_language Verilog [current_project]
 set_property ip_output_repo c:/Users/Yann/digitec/report5/report5.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  C:/Users/Yann/digitec/report5/report5.srcs/sources_1/new/adder.v
-  C:/Users/Yann/digitec/report5/report5.srcs/sources_1/new/arithmetic.v
-  C:/Users/Yann/digitec/report5/report5.srcs/sources_1/new/extender.v
-  C:/Users/Yann/digitec/report5/report5.srcs/sources_1/new/logical.v
-  C:/Users/Yann/digitec/report5/report5.srcs/sources_1/new/ALU.v
+  C:/Users/Yann/digitec/report5/report5.srcs/sources_1/imports/new/adder.v
+  C:/Users/Yann/digitec/report5/report5.srcs/sources_1/imports/new/arithmetic.v
+  C:/Users/Yann/digitec/report5/report5.srcs/sources_1/imports/new/extender.v
+  C:/Users/Yann/digitec/report5/report5.srcs/sources_1/imports/new/logical.v
+  C:/Users/Yann/digitec/report5/report5.srcs/sources_1/imports/new/ALU.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

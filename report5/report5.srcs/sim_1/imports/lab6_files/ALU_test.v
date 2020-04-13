@@ -66,7 +66,7 @@ module ALU_test;
 		// TO DO:
 		// Read the content of the file testvectors_hex.txt into the 
 		// array testvec. The file contains values in hexadecimal format
-        $readmemh("testvectors_hex.txt", testvec);
+        $readmemh("textvectors_hex.txt", testvec);
 		err_cnt=0; // number of errors
 		vec_cnt=0; // number of vectors
 	end
@@ -94,7 +94,6 @@ module ALU_test;
 			// Display message
 			$display("Error at %5d ns: Aluop %b a=%h b=%h", $time, aluop,a,b);	// %h displays hex
 			$display("       %h (%h expected)",result,exp_result);
-			$display("       %b",result);
 			$display(" Zero: %b (%b expected)",zero,exp_zero);							// %b displays binary
 			err_cnt = err_cnt + 1;																// increment error count
 		end
