@@ -11,14 +11,14 @@ reg clk;
 //inputclock
 reg input_clk;
 //output
-reg[5:0] q;
+wire [5:0] q;
 reg[10:0] vec_cnt;
 //testvec
 reg [2:0] testvec[1:0];
 always
     begin
-        clk=1; #2000000000; //50ns
-        clk=0; #2000000000;
+        clk=1; #1_000_000_000; //50ns
+        clk=0; #1_000_000_000;
     end //100ns clock
     always
     begin
@@ -27,7 +27,7 @@ always
     end //10ns clock
 initial
     begin
-        $readmemb("testvec.mem", testvec);
+        $readmemb("testvec.txt", testvec);
         vec_cnt = 0;
     end    
 always @ (posedge clk)
