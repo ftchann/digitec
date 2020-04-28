@@ -4,5 +4,12 @@ Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 2923d8092e
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'q' is not permitted [C:/Users/Yann/digitec/report6/report6.srcs/sim_1/new/test.v:46]
-ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_div
+Compiling module xil_defaultlib.fsm2
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav

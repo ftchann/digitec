@@ -12,7 +12,7 @@ reg clk;
 reg input_clk;
 //output
 wire [5:0] q;
-reg[10:0] vec_cnt;
+reg[5:0] vec_cnt;
 //testvec
 reg [2:0] testvec[1:0];
 always
@@ -32,9 +32,10 @@ initial
     end    
 always @ (posedge clk)
 begin
+    reset = 1;
     #20;
+    reset=0;
     {left, right, reset} = testvec[vec_cnt];
-    #60;
     vec_cnt = vec_cnt + 1;
     if((testvec[vec_cnt][0] === 1'bx))
     begin
