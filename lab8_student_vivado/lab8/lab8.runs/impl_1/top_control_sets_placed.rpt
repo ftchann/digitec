@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Fri Apr 24 16:54:29 2020
+| Date         : Fri May  1 16:10:35 2020
 | Host         : DESKTOP-JPHN0MJ running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
 | Design       : top
@@ -62,7 +62,7 @@ Table of Contents
 | No           | No                    | Yes                    |              25 |            7 |
 | No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |               0 |            0 |
-| Yes          | No                    | Yes                    |              28 |            8 |
+| Yes          | No                    | Yes                    |              28 |            9 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -70,14 +70,14 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
-+--------------------+---------------------------+------------------+------------------+----------------+
-|    Clock Signal    |       Enable Signal       | Set/Reset Signal | Slice Load Count | Bel Load Count |
-+--------------------+---------------------------+------------------+------------------+----------------+
-|  FPGACLK_IBUF_BUFG |                           | RESET_IBUF       |                1 |              2 |
-|  CLK_BUFG          |                           | RESET_IBUF       |                6 |             23 |
-|  CLK_BUFG          | processor/i_alu/E[0]      | RESET_IBUF       |                8 |             28 |
-|                    | processor/i_dmem/WE       |                  |                8 |             32 |
-|  CLK_BUFG          | processor/i_regf/RegWrite |                  |               16 |            128 |
-+--------------------+---------------------------+------------------+------------------+----------------+
++--------------------+-----------------------------+------------------+------------------+----------------+
+|    Clock Signal    |        Enable Signal        | Set/Reset Signal | Slice Load Count | Bel Load Count |
++--------------------+-----------------------------+------------------+------------------+----------------+
+|  FPGACLK_IBUF_BUFG |                             | RESET_IBUF       |                1 |              2 |
+|  CLK_BUFG          |                             | RESET_IBUF       |                6 |             23 |
+|  CLK_BUFG          | processor/i_regf/E[0]       | RESET_IBUF       |                9 |             28 |
+|                    | processor/i_regf/IsMemWrite |                  |                8 |             32 |
+|  CLK_BUFG          | processor/i_regf/RegWrite   |                  |               16 |            128 |
++--------------------+-----------------------------+------------------+------------------+----------------+
 
 

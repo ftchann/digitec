@@ -142,7 +142,7 @@ module MIPS(
 	  DataMemory i_dmem (
 	                    .A(ALUResult[7:2]),
 	                    .WD(WriteData),
-	                    .WE(MemWrite),
+	                    .WE(IsMemWrite),
 	                    .RD(ReadData)
                         // TODO Part 1
                         );

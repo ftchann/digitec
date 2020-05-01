@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Fri Apr 24 16:53:24 2020
+| Date         : Fri May  1 16:09:34 2020
 | Host         : DESKTOP-JPHN0MJ running 64-bit major release  (build 9200)
 | Command      : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
 | Design       : top
@@ -30,8 +30,8 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                |  663 |     0 |     20800 |  3.19 |
-|   LUT as Logic             |  375 |     0 |     20800 |  1.80 |
+| Slice LUTs*                |  724 |     0 |     20800 |  3.48 |
+|   LUT as Logic             |  436 |     0 |     20800 |  2.10 |
 |   LUT as Memory            |  288 |     0 |      9600 |  3.00 |
 |     LUT as Distributed RAM |  288 |     0 |           |       |
 |     LUT as Shift Register  |    0 |     0 |           |       |
@@ -92,7 +92,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   13 |     0 |       106 | 12.26 |
+| Bonded IOB                  |   15 |     0 |       106 | 14.15 |
 | Bonded IPADs                |    0 |     0 |        10 |  0.00 |
 | Bonded OPADs                |    0 |     0 |         4 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         5 |  0.00 |
@@ -152,19 +152,19 @@ Table of Contents
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | RAMD32   |  256 |  Distributed Memory |
-| LUT3     |  159 |                 LUT |
-| LUT2     |  138 |                 LUT |
+| LUT3     |  145 |                 LUT |
+| LUT6     |  131 |                 LUT |
 | FDRE     |  128 |        Flop & Latch |
-| LUT6     |  109 |                 LUT |
+| LUT2     |  108 |                 LUT |
+| LUT4     |   82 |                 LUT |
 | FDCE     |   47 |        Flop & Latch |
 | RAMS64E  |   32 |  Distributed Memory |
+| LUT5     |   19 |                 LUT |
 | CARRY4   |   16 |          CarryLogic |
 | OBUF     |   11 |                  IO |
-| LUT5     |    9 |                 LUT |
-| LUT4     |    7 |                 LUT |
-| LUT1     |    7 |                 LUT |
 | FDPE     |    6 |        Flop & Latch |
-| IBUF     |    2 |                  IO |
+| IBUF     |    4 |                  IO |
+| LUT1     |    3 |                 LUT |
 | BUFG     |    2 |               Clock |
 +----------+------+---------------------+
 

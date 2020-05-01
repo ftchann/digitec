@@ -29,7 +29,7 @@ module DataMemory(
     reg [31:0] DataArr [63:0];   // This is the variable that holds the memory
     initial
       begin
-        $readmemh("datamem_h.txt", DataArr);  // Initialize the array with this content
+        $readmemh("datamem_h_new.txt", DataArr);  // Initialize the array with this content
       end
 
 	 assign RD = DataArr[A];      // Read Data (RD) corresponds to address (A)
