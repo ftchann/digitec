@@ -85,7 +85,7 @@ clockdiv ClockDiv (
    // Create the 32 bit IOReadData based on IOAddr value. Remember IOAddr is a 4-bit
    // value.
     
-   assign IOReadData = (IOAddr == 4) ? {30'b0, switches} : 32'b0;
+   assign IOReadData = (IOAddr == 4) ? {30'b0, switches} : 32'b0; // switches are for the speed
 
 
 // Register to save the 28-bit Value

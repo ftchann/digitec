@@ -1,0 +1,213 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri May  8 15:42:42 2020
+# Process ID: 16260
+# Current directory: C:/Users/Yann/digitec/lab9_student/Lab9_student
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14480 C:\Users\Yann\digitec\lab9_student\Lab9_student\lab_9.xpr
+# Log file: C:/Users/Yann/digitec/lab9_student/Lab9_student/vivado.log
+# Journal file: C:/Users/Yann/digitec/lab9_student/Lab9_student\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Yann/digitec/lab9_student/Lab9_student/lab_9.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Chris/polybox/teaching/Digitech/2020/Labs/Lab9/Lab9/Lab9_student' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'impl_1' not found
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/Yann/digitec/lab9_student/Lab9_student/lab_9.ip_user_files', nor could it be found using path 'C:/Users/Chris/polybox/teaching/Digitech/2020/Labs/Lab9/Lab9/Lab9_student/lab_9.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:13 . Memory (MB): peak = 888.406 ; gain = 237.090
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Yann/digitec/lab9_student/Lab9_student/lab_9.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'MIPS_test' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Yann/digitec/lab9_student/Lab9_student/lab_9.sim/sim_1/behav/xsim/insmem_h.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/Yann/digitec/lab9_student/Lab9_student/lab_9.sim/sim_1/behav/xsim/datamem_h.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Yann/digitec/lab9_student/Lab9_student/lab_9.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj MIPS_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Yann/digitec/lab9_student/Lab9_student/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Yann/digitec/lab9_student/Lab9_student/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Yann/digitec/lab9_student/Lab9_student/MIPS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MIPS
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Yann/digitec/lab9_student/Lab9_student/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Yann/digitec/lab9_student/Lab9_student/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Yann/digitec/lab9_student/Lab9_student/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2458] undeclared symbol old_result, assumed default net type wire [C:/Users/Yann/digitec/lab9_student/Lab9_student/ALU.v:69]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Yann/digitec/lab9_student/Lab9_student/reg_half_synthmodel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_half
+INFO: [VRFC 10-311] analyzing module reg_half_dist_mem_gen_v4_1_xst_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Yann/digitec/lab9_student/Lab9_student/MIPS_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MIPS_test
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Yann/digitec/lab9_student/Lab9_student/lab_9.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Yann/digitec/lab9_student/Lab9_student/lab_9.sim/sim_1/behav/xsim'
+"xelab -wto 7e17bd2c72234a3a8aac19d19ed497ee --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MIPS_test_behav xil_defaultlib.MIPS_test xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 7e17bd2c72234a3a8aac19d19ed497ee --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MIPS_test_behav xil_defaultlib.MIPS_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.InstructionMemory
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.RAM32X1D
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.VCC
+Compiling module xil_defaultlib.reg_half_dist_mem_gen_v4_1_xst_1
+Compiling module xil_defaultlib.reg_half
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.ControlUnit
+Compiling module xil_defaultlib.MIPS
+Compiling module xil_defaultlib.MIPS_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot MIPS_test_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Yann/digitec/lab9_student/Lab9_student/lab_9.sim/sim_1/behav/xsim/xsim.dir/MIPS_test_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Yann/digitec/lab9_student/Lab9_student/lab_9.sim/sim_1/behav/xsim/xsim.dir/MIPS_test_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri May  8 16:30:57 2020. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri May  8 16:30:57 2020...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 918.508 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Yann/digitec/lab9_student/Lab9_student/lab_9.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "MIPS_test_behav -key {Behavioral:sim_1:Functional:MIPS_test} -tclbatch {MIPS_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source MIPS_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# log_wave -r /
+# run 20us
+$stop called at time : 1160 ns : File "C:/Users/Yann/digitec/lab9_student/Lab9_student/MIPS_test.v" Line 57
+xsim: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 948.059 ; gain = 28.207
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'MIPS_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 20us
+launch_simulation: Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 948.059 ; gain = 44.059
+run all
+run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 949.258 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 949.258 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 949.258 ; gain = 0.000
+reset
+WARNING: [Common 17-259] Unknown Tcl command 'reset' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+Ungltige(r) Parameter
+RESET { SESSION }
+ambiguous command name "reset": reset_attribute reset_drc reset_drc_check reset_methodology reset_methodology_check reset_msg_config reset_msg_count reset_operating_conditions reset_param reset_project reset_property reset_runs reset_simulation reset_ssn reset_switching_activity reset_target reset_timing reset_ucf
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 2s
+$stop called at time : 1160 ns : File "C:/Users/Yann/digitec/lab9_student/Lab9_student/MIPS_test.v" Line 57
+run 4s
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:25 . Memory (MB): peak = 958.121 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+$stop called at time : 1160 ns : File "C:/Users/Yann/digitec/lab9_student/Lab9_student/MIPS_test.v" Line 57
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:24 . Memory (MB): peak = 982.004 ; gain = 23.883
+INFO: [Common 17-344] 'run' was cancelled
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 20ms
+$stop called at time : 1160 ns : File "C:/Users/Yann/digitec/lab9_student/Lab9_student/MIPS_test.v" Line 57
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/MIPS_test/uut/i_alu/a}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/MIPS_test/uut/i_alu/b}} 
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1024.590 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Yann/digitec/lab9_student/Lab9_student/lab_9.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'MIPS_test' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Yann/digitec/lab9_student/Lab9_student/lab_9.sim/sim_1/behav/xsim/insmem_h.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/Yann/digitec/lab9_student/Lab9_student/lab_9.sim/sim_1/behav/xsim/datamem_h.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Yann/digitec/lab9_student/Lab9_student/lab_9.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj MIPS_test_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Yann/digitec/lab9_student/Lab9_student/lab_9.sim/sim_1/behav/xsim'
+"xelab -wto 7e17bd2c72234a3a8aac19d19ed497ee --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MIPS_test_behav xil_defaultlib.MIPS_test xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 7e17bd2c72234a3a8aac19d19ed497ee --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MIPS_test_behav xil_defaultlib.MIPS_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Yann/digitec/lab9_student/Lab9_student/lab_9.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "MIPS_test_behav -key {Behavioral:sim_1:Functional:MIPS_test} -tclbatch {MIPS_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source MIPS_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# log_wave -r /
+# run 20us
+$stop called at time : 1160 ns : File "C:/Users/Yann/digitec/lab9_student/Lab9_student/MIPS_test.v" Line 57
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'MIPS_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 20us
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1034.512 ; gain = 9.922

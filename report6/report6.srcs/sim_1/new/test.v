@@ -14,11 +14,12 @@ reg input_clk;
 wire [5:0] q;
 reg[5:0] vec_cnt;
 //testvec
-reg [2:0] testvec[1:0];
+reg [2:0] testvec[4:0];
 always
+    //clock to large runs multiple times
     begin
-        clk=1; #1_000_000_000; //50ns
-        clk=0; #1_000_000_000;
+        clk=1; #1_000_000; //50ns
+        clk=0; #1_000_000;
     end //100ns clock
     always
     begin
@@ -37,6 +38,7 @@ begin
     reset=0;
     {left, right, reset} = testvec[vec_cnt];
     vec_cnt = vec_cnt + 1;
+    $display(vec_cnt);
     if((testvec[vec_cnt][0] === 1'bx))
     begin
         $display("fertig");
