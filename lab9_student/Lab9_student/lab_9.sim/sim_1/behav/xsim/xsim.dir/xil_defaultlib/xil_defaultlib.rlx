@@ -2,7 +2,7 @@
 2019.2
 Nov  6 2019
 21:57:16
-C:/Users/Yann/digitec/lab9_student/Lab9_student/ALU.v,1588947793,verilog,,C:/Users/Yann/digitec/lab9_student/Lab9_student/reg_half_synthmodel.v,,ALU,,,,,,,,
+C:/Users/Yann/digitec/lab9_student/Lab9_student/ALU.v,1588950252,verilog,,C:/Users/Yann/digitec/lab9_student/Lab9_student/reg_half_synthmodel.v,,ALU,,,,,,,,
 C:/Users/Yann/digitec/lab9_student/Lab9_student/ControlUnit.v,1494517918,verilog,,C:/Users/Yann/digitec/lab9_student/Lab9_student/RegisterFile.v,,ControlUnit,,,,,,,,
 C:/Users/Yann/digitec/lab9_student/Lab9_student/DataMemory.v,1494517918,verilog,,C:/Users/Yann/digitec/lab9_student/Lab9_student/InstructionMemory.v,,DataMemory,,,,,,,,
 C:/Users/Yann/digitec/lab9_student/Lab9_student/InstructionMemory.v,1494517918,verilog,,C:/Users/Yann/digitec/lab9_student/Lab9_student/MIPS.v,,InstructionMemory,,,,,,,,

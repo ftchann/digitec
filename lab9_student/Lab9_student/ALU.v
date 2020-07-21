@@ -35,7 +35,7 @@ module ALU(
   wire [31:0] n_b;        // inverted b
   wire [31:0] sel_b;      // select b or n_b;
   wire [31:0] slt;        // output of the slt extension
-  wire [31:0] oldresult; // output of lab5
+  wire [31:0] old_result; // output of lab5
   wire [31:0] shiftvalue; // srl
   wire [31:0] multvalue;
   wire [31:0] mult_result; // srl
@@ -72,12 +72,12 @@ module ALU(
   assign shiftvalue = b >> shamt;
   
   //multiple
-  assign multvalue = a*b;
+  assign multvalue = a * b;
   
   always @(clock, reset)
   begin
     if (reset) low <= 32'b0;
-    else if (aluop == 6'b010010) low <= multvalue; 
+    else if (aluop == 6'b011001) low <= multvalue; 
     else low <= low;    
   end
   assign mult_result = aluop[3] ? 31'b0 : low; //multlu doesnt give an output to result

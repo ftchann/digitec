@@ -32,3 +32,45 @@ add_wave {{/MIPS_test/uut/i_alu/b}}
 close_sim
 launch_simulation
 source MIPS_test.tcl
+close_sim
+launch_simulation
+source MIPS_test.tcl
+current_wave_config {Untitled 3}
+add_wave {{/MIPS_test/uut/SrcA}} 
+current_wave_config {Untitled 3}
+add_wave {{/MIPS_test/uut/SrcB}} 
+reset
+restart
+run 100ns
+run 100ns
+restart
+run all
+run all
+restart
+run 50ns
+run 50ns
+run 50ns
+run 50ns
+run 100ns
+run 200ns
+restart
+run 300ns
+run 50ns
+run 500ns
+current_wave_config {Untitled 3}
+add_wave {{/MIPS_test/uut/i_alu/result}} 
+current_wave_config {Untitled 3}
+add_wave {{/MIPS_test/uut/i_alu/aluop}} 
+current_wave_config {Untitled 3}
+add_wave {{/MIPS_test/uut/i_alu/arithout}} 
+current_wave_config {Untitled 3}
+add_wave {{/MIPS_test/uut/i_alu/oldresult}} 
+close_sim
+launch_simulation
+source MIPS_test.tcl
+current_wave_config {Untitled 4}
+add_wave {{/MIPS_test/uut/i_alu/arithout}} 
+close_sim
+launch_simulation
+source MIPS_test.tcl
+close_sim
